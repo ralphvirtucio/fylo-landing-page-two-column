@@ -14,10 +14,58 @@
 
     <title>Frontend Mentor | Fylo landing page with two column layout</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
+    <!-- HEADER -->
+    <header class="fylo__header">
+      <img src="./images/logo.svg" alt="Fylo Logo" class="logo logo--header" />
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a href="#" class="nav__list-item--link">Features</a>
+          </li>
+          <li>
+            <a href="#" class="nav__list-item--link">Team</a>
+          </li>
+          <li>
+            <a href="#" class="nav__list-item--link">Sign In</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="fylo__main">
+      <!-- INTRODUCTORY SECTION -->
+      <section class="introductory">
+        <img
+          src="./images/illustration-1.svg"
+          alt="Illustration of people with a folder"
+        />
+        <div class="introductory__content">
+          <h1 class="heading heading--main">
+            All your files in one secure location, accessible anywhere.
+          </h1>
+          <p>
+            Fylo stores your most important files in one secure location.Access
+            them wherever you need, share and collaborate with friends, family,
+            and co-workers.
+          </p>
+          <div class="cta cta--introductory">
+            <input type="text" placeholder="Enter your email" />
+            <a href="#">Get Started</a>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- 
   Features
   Team
