@@ -1,0 +1,14 @@
+@use '../abstracts/' as *;
+
+.heading {
+  &--main {
+    font-family: $ff-headings-cta-headnav;
+    color: $primary-color-1;
+    margin-block-end: 2rem;
+  }
+}
+
+.introductory__text {
+  font-family: $ff-body;
+  color: $primary-color-1;
+}

@@ -5,6 +5,7 @@
   align-items: center;
   padding-inline: 1.5rem;
   padding-block-start: 1rem;
+  margin-block-end: 5rem;
 
   &--logo {
     width: 5rem;
@@ -18,7 +19,7 @@
     justify-content: space-between;
 
     &-item {
-      font-family: $headings-cta-headnav-ff;
+      font-family: $ff-headings-cta-headnav;
 
       &:not(:last-child) {
         margin-inline-end: 1rem;

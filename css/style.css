@@ -76,11 +76,23 @@ select {
     scroll-behavior: auto !important;
   }
 }
+.heading--main {
+  font-family: "Raleway", sans-serif;
+  color: hsl(243deg, 87%, 12%);
+  margin-block-end: 2rem;
+}
+
+.introductory__text {
+  font-family: "Open Sans", sans-serif;
+  color: hsl(243deg, 87%, 12%);
+}
+
 .fylo__header {
   display: flex;
   align-items: center;
   padding-inline: 1.5rem;
   padding-block-start: 1rem;
+  margin-block-end: 5rem;
 }
 .fylo__header--logo {
   width: 5rem;
@@ -96,6 +108,17 @@ select {
 }
 .nav__list-item:not(:last-child) {
   margin-inline-end: 1rem;
+}
+
+.introductory {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-inline: 1.5rem;
+  row-gap: 2rem;
+  text-align: center;
+}
+.introductory__illustration {
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

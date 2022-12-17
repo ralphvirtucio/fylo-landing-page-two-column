@@ -1,0 +1,13 @@
+@use '../abstracts/' as *;
+
+.introductory {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-inline: 1.5rem;
+  row-gap: 2rem;
+  text-align: center;
+
+  &__illustration {
+    margin-bottom: 1rem;
+  }
+}
