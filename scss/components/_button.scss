@@ -10,4 +10,26 @@
   &--get-started {
     background-color: $accent-color-1;
   }
+
+  &--see-fylo-works {
+    &:link,
+    &:visited {
+      display: flex;
+      align-items: center;
+      font-size: 0.9rem;
+      font-family: $ff-body;
+      color: $accent-color-2;
+      gap: 0.5rem;
+      margin-block-end: 2rem;
+      border-bottom: 1px $accent-color-2 solid;
+    }
+
+    // &:hover {
+    //   color: red;
+    // }
+
+    // &:hover g use {
+    //   fill: red;
+    // }
+  }
 }

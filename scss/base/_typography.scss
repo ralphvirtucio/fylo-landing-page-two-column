@@ -1,14 +1,38 @@
 @use '../abstracts/' as *;
 
 .heading {
+  font-family: $ff-headings-cta-headnav;
+  color: $primary-color-1;
   &--main {
-    font-family: $ff-headings-cta-headnav;
-    color: $primary-color-1;
     margin-block-end: 2rem;
+  }
+
+  &--sub {
+    font-size: 1rem;
+    text-align: center;
+    margin-block-end: 1.5rem;
   }
 }
 
 .introductory__text {
   font-family: $ff-body;
   color: $primary-color-1;
+}
+
+.fylo__hero--text {
+  font-family: $ff-body;
+  color: $primary-color-2;
+  font-size: 0.9rem;
+
+  &:not(:last-child) {
+    margin-block-end: 1rem;
+  }
+}
+
+.fylo__blockquote {
+  font-family: $ff-body;
+  font-size: 0.8rem;
+  color: $primary-color-1;
+  line-height: 1.5;
+  margin-block-end: 1rem;
 }

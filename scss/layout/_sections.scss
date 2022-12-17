@@ -16,8 +16,27 @@
 .fylo__hero {
   display: flex;
   flex-direction: column;
-  background-image: url('../../images/bg-curve-mobile.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: red;
+  align-items: center;
+  padding-inline: 1.5rem;
+  padding-block-end: 5rem;
+
+  &--bg {
+    background-image: url('../../images/bg-curve-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: $neutral-color-1;
+  }
+
+  &-content {
+    margin-block-end: 2rem;
+  }
+}
+
+.fylo__testimonials {
+  background-color: #fff;
+  box-shadow: 3px 6.1px 6.1px hsl(0deg 0% 0% / 0.21);
+  padding-block: 1.5rem;
+  padding-inline: 2rem;
+  margin-inline: 1rem;
+  border-radius: 3px;
 }
