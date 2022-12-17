@@ -1,0 +1,13 @@
+@use '../abstracts/' as *;
+
+.btn {
+  color: $neutral-color-1;
+  font-family: $ff-body;
+  font-weight: 600;
+  padding-block: 0.5rem;
+  border-radius: 3px;
+
+  &--get-started {
+    background-color: $accent-color-1;
+  }
+}

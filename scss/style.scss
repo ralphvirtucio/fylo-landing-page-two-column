@@ -3,9 +3,10 @@
 @use './base/reset';
 @use './base/typography';
 
-// @use './components/'
+@use './components/button';
 
 @use './layout/header';
 @use './layout/sections';
+@use './layout/forms';
 
 @use './pages/home';
