@@ -76,5 +76,26 @@ select {
     scroll-behavior: auto !important;
   }
 }
+.fylo__header {
+  display: flex;
+  align-items: center;
+  padding-inline: 1.5rem;
+  padding-block-start: 1rem;
+}
+.fylo__header--logo {
+  width: 5rem;
+  margin-inline-end: auto;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__list-item {
+  font-family: "Raleway", sans-serif;
+}
+.nav__list-item:not(:last-child) {
+  margin-inline-end: 1rem;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,28 @@
+@use '../abstracts' as *;
+
+.fylo__header {
+  display: flex;
+  align-items: center;
+  padding-inline: 1.5rem;
+  padding-block-start: 1rem;
+
+  &--logo {
+    width: 5rem;
+    margin-inline-end: auto;
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+
+    &-item {
+      font-family: $headings-cta-headnav-ff;
+
+      &:not(:last-child) {
+        margin-inline-end: 1rem;
+      }
+    }
+  }
+}
