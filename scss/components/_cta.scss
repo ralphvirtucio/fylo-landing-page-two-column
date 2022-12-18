@@ -1,0 +1,20 @@
+@use '../abstracts/' as *;
+
+.cta {
+  background-color: $primary-color-2;
+  padding-block: 5rem;
+  padding-inline: 2rem;
+  text-align: center;
+  color: #fff;
+
+  &__heading {
+    font-family: $ff-headings-cta-headnav;
+    margin-block-end: 1rem;
+  }
+
+  &__text {
+    margin-block-end: 2rem;
+    font-family: $ff-body;
+    font-size: 0.95rem;
+  }
+}
