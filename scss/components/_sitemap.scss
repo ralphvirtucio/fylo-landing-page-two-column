@@ -1,0 +1,17 @@
+@use '../abstracts/' as *;
+
+.site-map {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1rem;
+
+  &__list-item {
+    &:nth-child(4) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__link {
+    color: #fff;
+  }
+}

@@ -1,0 +1,41 @@
+@use '../abstracts' as *;
+
+.fylo__footer {
+  background-color: $primary-color-1;
+  padding-inline: 2rem;
+  padding-block: 3rem;
+  color: #fff;
+  font-family: $ff-body;
+
+  &-logo {
+    margin-block-end: 2rem;
+
+    path {
+      fill: #fff;
+    }
+  }
+
+  &--col-1 {
+    margin-block-end: 3rem;
+  }
+
+  &--col-2 {
+    margin-block-end: 3rem;
+  }
+}
+
+.contact-info {
+  address {
+    font-style: normal;
+  }
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  &:not(:last-child) {
+    margin-block-end: 1rem;
+  }
+}

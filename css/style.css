@@ -171,6 +171,42 @@ select {
   font-size: 0.95rem;
 }
 
+.site-map {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1rem;
+}
+.site-map__list-item:nth-child(4) {
+  margin-bottom: 2rem;
+}
+.site-map__link {
+  color: #fff;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-media__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 0.5rem;
+  transition: all 0.2s;
+}
+.social-media__link:not(:last-child) {
+  margin-inline-end: 1rem;
+}
+.social-media__link svg {
+  fill: #fff;
+  width: 1rem;
+  height: 1rem;
+}
+
 .fylo__header {
   display: flex;
   align-items: center;
@@ -276,6 +312,9 @@ select {
   fill: #fff;
 }
 .fylo__footer--col-1 {
+  margin-block-end: 3rem;
+}
+.fylo__footer--col-2 {
   margin-block-end: 3rem;
 }
 
