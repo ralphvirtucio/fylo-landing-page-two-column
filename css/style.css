@@ -262,4 +262,34 @@ select {
   font-size: 0.85rem;
 }
 
+.fylo__footer {
+  background-color: hsl(243deg, 87%, 12%);
+  padding-inline: 2rem;
+  padding-block: 3rem;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+.fylo__footer-logo {
+  margin-block-end: 2rem;
+}
+.fylo__footer-logo path {
+  fill: #fff;
+}
+.fylo__footer--col-1 {
+  margin-block-end: 3rem;
+}
+
+.contact-info address {
+  font-style: normal;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.info:not(:last-child) {
+  margin-block-end: 1rem;
+}
+
 /*# sourceMappingURL=style.css.map */
