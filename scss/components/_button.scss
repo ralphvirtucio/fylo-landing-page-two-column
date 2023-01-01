@@ -25,11 +25,13 @@
     &:visited {
       display: flex;
       align-items: center;
+      align-self: center;
+      justify-content: center;
       font-size: 0.9rem;
       font-family: $ff-body;
       color: $accent-color-2;
       gap: 0.5rem;
-      margin-block-end: 2rem;
+      margin-block: 2rem;
       border-bottom: 1px $accent-color-2 solid;
     }
 

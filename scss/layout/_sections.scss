@@ -9,6 +9,7 @@
   background-image: url('../images/bg-curve-mobile.svg');
   background-repeat: no-repeat;
   background-position: bottom;
+  background-size: cover;
   padding-block-end: 10rem;
 
   @media only screen and (min-width: 48rem) {
@@ -41,8 +42,12 @@
   padding-inline: 1.5rem;
   padding-block-end: 5rem;
   background-color: $neutral-color-1;
+  gap: 3rem;
 
   &-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     margin-block-end: 2rem;
   }
 }
