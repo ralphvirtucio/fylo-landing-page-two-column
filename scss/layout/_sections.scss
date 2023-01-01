@@ -6,20 +6,14 @@
   gap: 2rem;
   padding-inline: 1.5rem;
   text-align: center;
-  margin-bottom: 5rem;
-
-  @media only screen and (min-width: 48rem) {
-    flex-direction: row-reverse;
-    text-align: start;
-    padding-inline: 3rem;
-  }
+  background-image: url('../images/bg-curve-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-block-end: 10rem;
+  // margin-bottom: 5rem;
 
   &__illustration {
     margin-bottom: 1rem;
-
-    @media only screen and (min-width: 48rem) {
-      width: 15rem;
-    }
   }
 }
 
@@ -30,22 +24,6 @@
   padding-inline: 1.5rem;
   padding-block-end: 5rem;
   background-color: $neutral-color-1;
-
-  &::before {
-    content: '';
-    background-image: url('../images/bg-curve-mobile.svg');
-    width: 30rem;
-    height: 2rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: $neutral-color-1;
-  }
-  // &--bg {
-  //   // background-image: url('../../images/bg-curve-mobile.svg');
-  //   // background-repeat: no-repeat;
-  //   // background-size: contain;
-  //   // background-color: $neutral-color-1;
-  // }
 
   &-content {
     margin-block-end: 2rem;

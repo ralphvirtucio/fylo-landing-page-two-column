@@ -83,11 +83,6 @@ select {
 .heading--main {
   margin-block-end: 2rem;
 }
-@media only screen and (min-width: 40rem) {
-  .heading--main {
-    margin-block-end: 0.5rem;
-  }
-}
 .heading--sub {
   font-size: 1rem;
   text-align: center;
@@ -98,11 +93,6 @@ select {
   font-family: "Open Sans", sans-serif;
   color: hsl(243deg, 87%, 12%);
   margin-block-end: 2rem;
-}
-@media only screen and (min-width: 40rem) {
-  .introductory__text {
-    margin-block-end: 1rem;
-  }
 }
 
 .fylo__hero--text {
@@ -225,11 +215,6 @@ select {
   padding-block-start: 1rem;
   margin-block-end: 5rem;
 }
-@media only screen and (min-width: 48rem) {
-  .fylo__header {
-    padding-inline: 3rem;
-  }
-}
 .fylo__header--logo {
   width: 5rem;
   margin-inline-end: auto;
@@ -252,22 +237,13 @@ select {
   gap: 2rem;
   padding-inline: 1.5rem;
   text-align: center;
-  margin-bottom: 5rem;
-}
-@media only screen and (min-width: 48rem) {
-  .introductory {
-    flex-direction: row-reverse;
-    text-align: start;
-    padding-inline: 3rem;
-  }
+  background-image: url("../images/bg-curve-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-block-end: 10rem;
 }
 .introductory__illustration {
   margin-bottom: 1rem;
-}
-@media only screen and (min-width: 48rem) {
-  .introductory__illustration {
-    width: 15rem;
-  }
 }
 
 .fylo__hero {
@@ -276,15 +252,6 @@ select {
   align-items: center;
   padding-inline: 1.5rem;
   padding-block-end: 5rem;
-  background-color: hsl(240deg, 75%, 98%);
-}
-.fylo__hero::before {
-  content: "";
-  background-image: url("../images/bg-curve-mobile.svg");
-  width: 30rem;
-  height: 2rem;
-  background-repeat: no-repeat;
-  background-size: cover;
   background-color: hsl(240deg, 75%, 98%);
 }
 .fylo__hero-content {
