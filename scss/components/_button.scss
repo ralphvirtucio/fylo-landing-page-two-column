@@ -8,9 +8,16 @@
   border-radius: 3px;
 
   &--get-started {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $accent-color-1;
     font-size: 0.85rem;
     font-weight: 400;
+
+    @media only screen and (min-width: 48rem) {
+      width: 30%;
+    }
   }
 
   &--see-fylo-works {

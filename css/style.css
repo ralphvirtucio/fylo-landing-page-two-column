@@ -83,6 +83,12 @@ select {
 .heading--main {
   margin-block-end: 2rem;
 }
+@media only screen and (min-width: 48rem) {
+  .heading--main {
+    margin-block-end: 0.65rem;
+    font-size: 1.2rem;
+  }
+}
 .heading--sub {
   font-size: 1rem;
   text-align: center;
@@ -93,6 +99,12 @@ select {
   font-family: "Open Sans", sans-serif;
   color: hsl(243deg, 87%, 12%);
   margin-block-end: 2rem;
+}
+@media only screen and (min-width: 48rem) {
+  .introductory__text {
+    margin-block-end: 1rem;
+    font-size: 0.8rem;
+  }
 }
 
 .fylo__hero--text {
@@ -120,9 +132,17 @@ select {
   border-radius: 3px;
 }
 .btn--get-started {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: hsl(224deg, 93%, 58%);
   font-size: 0.85rem;
   font-weight: 400;
+}
+@media only screen and (min-width: 48rem) {
+  .btn--get-started {
+    width: 30%;
+  }
 }
 .btn--see-fylo-works:link, .btn--see-fylo-works:visited {
   display: flex;
@@ -215,6 +235,11 @@ select {
   padding-block-start: 1rem;
   margin-block-end: 5rem;
 }
+@media only screen and (min-width: 48rem) {
+  .fylo__header {
+    padding-inline: 3rem;
+  }
+}
 .fylo__header--logo {
   width: 5rem;
   margin-inline-end: auto;
@@ -242,8 +267,27 @@ select {
   background-position: bottom;
   padding-block-end: 10rem;
 }
+@media only screen and (min-width: 48rem) {
+  .introductory {
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: start;
+    padding-inline: 3rem;
+  }
+}
 .introductory__illustration {
   margin-bottom: 1rem;
+}
+@media only screen and (min-width: 48rem) {
+  .introductory__illustration {
+    flex: 1;
+    max-width: 50%;
+  }
+}
+@media only screen and (min-width: 48rem) {
+  .introductory__content {
+    flex: 1;
+  }
 }
 
 .fylo__hero {
@@ -273,6 +317,12 @@ select {
   gap: 1rem;
   text-align: center;
 }
+@media only screen and (min-width: 48rem) {
+  .form {
+    flex-direction: row;
+    gap: 0.6rem;
+  }
+}
 .form--cta {
   gap: 0.5rem;
   width: 90%;
@@ -287,6 +337,16 @@ select {
 .form__input-field-introductory {
   padding-block: 0.5rem;
   padding-inline: 1.5rem;
+}
+.form__input-field-introductory::placeholder {
+  color: hsl(0deg, 0%, 75%);
+  font-size: 0.85rem;
+}
+@media only screen and (min-width: 48rem) {
+  .form__input-field-introductory {
+    padding-inline: 0.5rem;
+    width: 60%;
+  }
 }
 .form__input-field-cta {
   padding-inline: 0.75rem;

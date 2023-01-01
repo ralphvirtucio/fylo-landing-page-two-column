@@ -10,10 +10,27 @@
   background-repeat: no-repeat;
   background-position: bottom;
   padding-block-end: 10rem;
-  // margin-bottom: 5rem;
+
+  @media only screen and (min-width: 48rem) {
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: start;
+    padding-inline: 3rem;
+  }
 
   &__illustration {
     margin-bottom: 1rem;
+
+    @media only screen and (min-width: 48rem) {
+      flex: 1;
+      max-width: 50%;
+    }
+  }
+
+  &__content {
+    @media only screen and (min-width: 48rem) {
+      flex: 1;
+    }
   }
 }
 

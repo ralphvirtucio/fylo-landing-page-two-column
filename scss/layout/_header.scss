@@ -7,6 +7,10 @@
   padding-block-start: 1rem;
   margin-block-end: 5rem;
 
+  @media only screen and (min-width: 48rem) {
+    padding-inline: 3rem;
+  }
+
   &--logo {
     width: 5rem;
     margin-inline-end: auto;
