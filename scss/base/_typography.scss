@@ -15,6 +15,10 @@
   &--sub {
     font-size: 1rem;
     text-align: center;
+
+    @media only screen and (min-width: 48rem) {
+      text-align: start;
+    }
   }
 }
 
@@ -33,6 +37,9 @@
   font-family: $ff-body;
   color: $primary-color-2;
   font-size: 0.9rem;
+  @media only screen and (min-width: 48rem) {
+    font-size: 0.8rem;
+  }
 }
 
 .fylo__blockquote {
@@ -41,4 +48,8 @@
   color: $primary-color-1;
   line-height: 1.5;
   margin-block-end: 1rem;
+
+  @media only screen and (min-width: 48rem) {
+    font-size: 0.7rem;
+  }
 }
