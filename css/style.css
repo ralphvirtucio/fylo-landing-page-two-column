@@ -261,11 +261,7 @@ select {
   gap: 2rem;
   padding-inline: 1.5rem;
   text-align: center;
-  background-image: url("../images/bg-curve-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-  padding-block-end: 10rem;
+  margin-bottom: 5rem;
 }
 @media only screen and (min-width: 48rem) {
   .introductory {
@@ -296,8 +292,18 @@ select {
   align-items: center;
   padding-inline: 1.5rem;
   padding-block-end: 5rem;
-  background-color: hsl(240deg, 75%, 98%);
+  background-color: #f8f8fe;
   gap: 3rem;
+  position: relative;
+}
+.fylo__hero::before {
+  content: "";
+  background-image: url("../images/bg-curve-mobile.svg");
+  position: absolute;
+  width: 100%;
+  height: 2rem;
+  top: -2.7%;
+  background-repeat: no-repeat;
 }
 .fylo__hero-content {
   display: flex;
