@@ -1,11 +1,27 @@
 @use '../abstracts/' as *;
 
 .cta {
+  display: flex;
+  flex-direction: column;
   background-color: $primary-color-2;
   padding-block: 5rem;
   padding-inline: 2rem;
   text-align: center;
   color: #fff;
+
+  @media only screen and (min-width: 48rem) {
+    flex-direction: row;
+    padding-inline: 3rem;
+    gap: 5rem;
+    text-align: start;
+  }
+
+  &__content {
+    @media only screen and (min-width: 48rem) {
+      max-width: 50%;
+      flex: 1;
+    }
+  }
 
   &__heading {
     font-family: $ff-headings-cta-headnav;
