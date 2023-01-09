@@ -238,13 +238,45 @@ select {
   grid-template-columns: 1fr;
   row-gap: 1rem;
 }
+@media only screen and (min-width: 48rem) {
+  .site-map {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem;
+  }
+}
 .site-map__list-item:nth-child(4) {
   margin-bottom: 2rem;
+}
+@media only screen and (min-width: 48rem) {
+  .site-map__list-item:nth-child(4) {
+    margin-bottom: 0;
+  }
 }
 .site-map__link {
   color: #fff;
 }
 
+@media only screen and (min-width: 48rem) {
+  #jobs {
+    grid-row: 2;
+  }
+  #contactus {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  #press {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  #privacy {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  #terms {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
 .social-media {
   display: flex;
   justify-content: center;
@@ -459,11 +491,19 @@ select {
 }
 
 .fylo__footer {
+  display: flex;
+  flex-direction: column;
   background-color: hsl(243deg, 87%, 12%);
   padding-inline: 2rem;
   padding-block: 3rem;
   color: #fff;
   font-family: "Open Sans", sans-serif;
+}
+@media only screen and (min-width: 48rem) {
+  .fylo__footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .fylo__footer-logo {
   margin-block-end: 2rem;
@@ -474,8 +514,18 @@ select {
 .fylo__footer--col-1 {
   margin-block-end: 3rem;
 }
+@media only screen and (min-width: 48rem) {
+  .fylo__footer--col-1 {
+    margin-block-end: 0rem;
+  }
+}
 .fylo__footer--col-2 {
   margin-block-end: 3rem;
+}
+@media only screen and (min-width: 48rem) {
+  .fylo__footer--col-2 {
+    margin-block-end: 0rem;
+  }
 }
 
 .contact-info address {

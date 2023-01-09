@@ -1,11 +1,18 @@
 @use '../abstracts' as *;
 
 .fylo__footer {
+  display: flex;
+  flex-direction: column;
   background-color: $primary-color-1;
   padding-inline: 2rem;
   padding-block: 3rem;
   color: #fff;
   font-family: $ff-body;
+
+  @media only screen and (min-width: 48rem) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
   &-logo {
     margin-block-end: 2rem;
@@ -17,10 +24,18 @@
 
   &--col-1 {
     margin-block-end: 3rem;
+
+    @media only screen and (min-width: 48rem) {
+      margin-block-end: 0rem;
+    }
   }
 
   &--col-2 {
     margin-block-end: 3rem;
+
+    @media only screen and (min-width: 48rem) {
+      margin-block-end: 0rem;
+    }
   }
 }
 

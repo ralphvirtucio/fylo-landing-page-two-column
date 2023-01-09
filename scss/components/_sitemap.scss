@@ -5,13 +5,48 @@
   grid-template-columns: 1fr;
   row-gap: 1rem;
 
+  @media only screen and (min-width: 48rem) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem;
+  }
+
   &__list-item {
     &:nth-child(4) {
       margin-bottom: 2rem;
+
+      @media only screen and (min-width: 48rem) {
+        margin-bottom: 0;
+      }
     }
   }
 
   &__link {
     color: #fff;
+  }
+}
+
+@media only screen and (min-width: 48rem) {
+  #jobs {
+    grid-row: 2;
+  }
+
+  #contactus {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  #press {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  #privacy {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  #terms {
+    grid-column: 2;
+    grid-row: 2;
   }
 }
