@@ -26,6 +26,10 @@
         padding-inline: 1rem;
         width: 60%;
       }
+
+      @media only screen and (min-width: 64rem) {
+        width: 45%;
+      }
     }
   }
 
