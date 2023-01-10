@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   background-color: $primary-color-1;
-  padding-inline: 2rem;
+  padding-inline: 3rem;
   padding-block: 3rem;
   color: #fff;
   font-family: $ff-body;
@@ -12,6 +12,10 @@
   @media only screen and (min-width: 48rem) {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  @media only screen and (min-width: 64rem) {
+    padding-inline: 4rem;
   }
 
   &-logo {

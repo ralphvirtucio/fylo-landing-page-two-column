@@ -232,6 +232,11 @@ select {
     text-align: start;
   }
 }
+@media only screen and (min-width: 64rem) {
+  .cta {
+    padding-inline: 4rem;
+  }
+}
 @media only screen and (min-width: 48rem) {
   .cta__content {
     max-width: 50%;
@@ -332,6 +337,7 @@ select {
 @media only screen and (min-width: 64rem) {
   .fylo__header {
     padding-block-start: 2rem;
+    padding-inline: 4rem;
   }
 }
 .fylo__header--logo {
@@ -371,6 +377,11 @@ select {
     padding-inline: 3rem;
   }
 }
+@media only screen and (min-width: 64rem) {
+  .introductory {
+    padding-inline: 4rem;
+  }
+}
 .introductory__illustration {
   margin-bottom: 1rem;
 }
@@ -401,6 +412,11 @@ select {
     flex-direction: row-reverse;
     padding-inline: 3rem;
     padding-block-start: 2rem;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  .fylo__hero {
+    padding-inline: 4rem;
   }
 }
 .fylo__hero::before {
@@ -530,7 +546,7 @@ select {
   display: flex;
   flex-direction: column;
   background-color: hsl(243deg, 87%, 12%);
-  padding-inline: 2rem;
+  padding-inline: 3rem;
   padding-block: 3rem;
   color: #fff;
   font-family: "Open Sans", sans-serif;
@@ -539,6 +555,11 @@ select {
   .fylo__footer {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  .fylo__footer {
+    padding-inline: 4rem;
   }
 }
 .fylo__footer-logo {

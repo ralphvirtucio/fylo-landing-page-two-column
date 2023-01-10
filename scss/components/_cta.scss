@@ -16,6 +16,10 @@
     text-align: start;
   }
 
+  @media only screen and (min-width: 64rem) {
+    padding-inline: 4rem;
+  }
+
   &__content {
     @media only screen and (min-width: 48rem) {
       max-width: 50%;
