@@ -19,11 +19,18 @@
   @media only screen and (min-width: 64rem) {
     padding-inline: 4rem;
   }
+  @media only screen and (min-width: 90rem) {
+    justify-content: space-between;
+  }
 
   &__content {
     @media only screen and (min-width: 48rem) {
       max-width: 50%;
       flex: 1;
+    }
+
+    @media only screen and (min-width: 90rem) {
+      max-width: 40%;
     }
   }
 

@@ -21,8 +21,13 @@
     margin-inline: auto;
 
     @media only screen and (min-width: 48rem) {
+      margin-inline: 0;
       max-width: 50%;
       flex: 1;
+    }
+
+    @media only screen and (min-width: 90rem) {
+      max-width: 40%;
     }
   }
 }
@@ -44,7 +49,6 @@
     @media only screen and (min-width: 48rem) {
       padding-inline: 0.5rem;
       width: 60%;
-      // font-size: 0.7rem;
     }
   }
 
@@ -56,5 +60,9 @@
     }
     padding-inline: 0.75rem;
     padding-block: 0.5rem;
+
+    @media only screen and (min-width: 90rem) {
+      width: 80%;
+    }
   }
 }

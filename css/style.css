@@ -94,6 +94,11 @@ select {
     font-size: 1.8rem;
   }
 }
+@media only screen and (min-width: 90rem) {
+  .heading--main {
+    font-size: 2.4rem;
+  }
+}
 .heading--sub {
   font-size: 1rem;
   text-align: center;
@@ -108,6 +113,11 @@ select {
     font-size: 1.5rem;
   }
 }
+@media only screen and (min-width: 90rem) {
+  .heading--sub {
+    font-size: 2rem;
+  }
+}
 
 .introductory__text {
   font-family: "Open Sans", sans-serif;
@@ -120,6 +130,11 @@ select {
     font-size: 0.8rem;
   }
 }
+@media only screen and (min-width: 90rem) {
+  .introductory__text {
+    font-size: 1.2rem;
+  }
+}
 
 .fylo__hero--text {
   font-family: "Open Sans", sans-serif;
@@ -129,6 +144,7 @@ select {
 @media only screen and (min-width: 48rem) {
   .fylo__hero--text {
     font-size: 0.8rem;
+    width: 60ch;
   }
 }
 
@@ -138,11 +154,6 @@ select {
   color: hsl(243deg, 87%, 12%);
   line-height: 1.5;
   margin-block-end: 1rem;
-}
-@media only screen and (min-width: 48rem) {
-  .fylo__blockquote {
-    font-size: 0.7rem;
-  }
 }
 
 .btn {
@@ -237,10 +248,20 @@ select {
     padding-inline: 4rem;
   }
 }
+@media only screen and (min-width: 90rem) {
+  .cta {
+    justify-content: space-between;
+  }
+}
 @media only screen and (min-width: 48rem) {
   .cta__content {
     max-width: 50%;
     flex: 1;
+  }
+}
+@media only screen and (min-width: 90rem) {
+  .cta__content {
+    max-width: 40%;
   }
 }
 .cta__heading {
@@ -472,7 +493,7 @@ select {
   padding-block: 1.5rem;
   padding-inline: 2rem;
   margin-inline: 1rem;
-  border-radius: 3px;
+  border-radius: 6px;
 }
 @media only screen and (min-width: 48rem) {
   .fylo__testimonials {
@@ -484,6 +505,11 @@ select {
 @media only screen and (min-width: 64rem) {
   .fylo__testimonials {
     width: 60%;
+  }
+}
+@media only screen and (min-width: 90rem) {
+  .fylo__testimonials {
+    width: 50%;
   }
 }
 
@@ -508,8 +534,14 @@ select {
 }
 @media only screen and (min-width: 48rem) {
   .form--cta {
+    margin-inline: 0;
     max-width: 50%;
     flex: 1;
+  }
+}
+@media only screen and (min-width: 90rem) {
+  .form--cta {
+    max-width: 40%;
   }
 }
 
@@ -540,6 +572,11 @@ select {
   color: hsl(0deg, 0%, 75%);
   font-family: "Raleway", sans-serif;
   font-size: 0.85rem;
+}
+@media only screen and (min-width: 90rem) {
+  .form__input-field-cta {
+    width: 80%;
+  }
 }
 
 .fylo__footer {
