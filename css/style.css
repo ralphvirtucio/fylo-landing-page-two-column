@@ -314,9 +314,19 @@ select {
     margin-block-end: 2rem;
   }
 }
+@media only screen and (min-width: 64rem) {
+  .fylo__header {
+    padding-block-start: 2rem;
+  }
+}
 .fylo__header--logo {
   width: 5rem;
   margin-inline-end: auto;
+}
+@media only screen and (min-width: 64rem) {
+  .fylo__header--logo {
+    width: 8rem;
+  }
 }
 
 .nav__list {
