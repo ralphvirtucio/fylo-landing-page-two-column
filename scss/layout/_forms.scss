@@ -16,7 +16,7 @@
   &--cta {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    // gap: 0.5rem;
     width: 90%;
     margin-inline: auto;
 
@@ -55,16 +55,37 @@
   &-cta {
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
     border: none;
+    padding-inline: 0.75rem;
+    padding-block: 0.5rem;
+
     &::placeholder {
       color: $neutral-color-2;
       font-family: $ff-headings-cta-headnav;
       font-size: 0.85rem;
     }
-    padding-inline: 0.75rem;
-    padding-block: 0.5rem;
+
+    &:valid {
+      border: none;
+    }
+
+    &:invalid {
+      border: 1px solid red;
+    }
 
     @media only screen and (min-width: 90rem) {
       width: 80%;
     }
   }
 }
+
+// .invalid {
+//   display: none;
+//   margin-block-start: 0.2rem;
+//   margin-block-end: 1rem;
+//   font-family: $ff-body;
+//   font-size: 0.85rem;
+// }
+
+// .form__input-field-cta:invalid ~ .invalid {
+//   display: block;
+// }

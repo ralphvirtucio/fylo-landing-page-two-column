@@ -171,6 +171,7 @@ select {
   font-size: 0.85rem;
   font-weight: 400;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  border: none;
   cursor: pointer;
 }
 .btn--get-started:hover {
@@ -578,7 +579,6 @@ select {
 .form--cta {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
   width: 90%;
   margin-inline: auto;
 }
@@ -624,6 +624,12 @@ select {
   color: hsl(0deg, 0%, 75%);
   font-family: "Raleway", sans-serif;
   font-size: 0.85rem;
+}
+.form__input-field-cta:valid {
+  border: none;
+}
+.form__input-field-cta:invalid {
+  border: 1px solid red;
 }
 @media only screen and (min-width: 90rem) {
   .form__input-field-cta {

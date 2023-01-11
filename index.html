@@ -62,13 +62,15 @@
           </p>
           <form class="form form--introductory">
             <input
-              type="text"
+              type="email"
               placeholder="Enter your email..."
               class="form__input-field form__input-field-introductory"
             />
-            <a href="#" class="btn btn--get-started btn--get-started-intro"
-              >Get Started</a
-            >
+            <input
+              type="submit"
+              value="Get Started"
+              class="btn btn--get-started btn--get-started-intro"
+            />
           </form>
         </div>
       </section>
@@ -185,9 +187,12 @@
             placeholder="email@example.com"
             class="form__input-field form__input-field-cta"
           />
-          <a href="#" class="btn btn--get-started btn--get-started-cta"
-            >Get Started For Free</a
-          >
+          <span class="invalid">Please check your email</span>
+          <input
+            type="submit"
+            value="Get Started For Free"
+            class="btn btn--get-started btn--get-started-cta"
+          />
         </form>
       </section>
     </main>
