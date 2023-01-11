@@ -179,7 +179,7 @@ select {
 }
 @media only screen and (min-width: 48rem) {
   .btn--get-started-intro {
-    width: 30%;
+    padding-inline: 0.4rem;
   }
 }
 @media only screen and (min-width: 48rem) {
@@ -515,13 +515,18 @@ select {
 }
 @media only screen and (min-width: 90rem) {
   .fylo__hero::before {
-    height: 84px;
     top: -12%;
+  }
+}
+@media only screen and (min-width: 119rem) {
+  .fylo__hero::before {
+    height: 96px;
+    top: -13%;
   }
 }
 @media only screen and (min-width: 48rem) {
   .fylo__hero--illustration {
-    max-width: 50%;
+    max-width: 45%;
     flex: 1;
   }
 }
@@ -565,15 +570,31 @@ select {
 }
 
 .form--introductory {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  display: grid;
   text-align: center;
 }
 @media only screen and (min-width: 48rem) {
   .form--introductory {
-    flex-direction: row;
-    gap: 0.6rem;
+    grid-template-columns: 60% 30%;
+    column-gap: 1rem;
+  }
+}
+@media only screen and (min-width: 23.4375rem) {
+  .form--introductory {
+    row-gap: 0.5rem;
+  }
+}
+.form--introductory__invalid {
+  display: none;
+  grid-row: 2;
+  margin-block-start: 0.2rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.85rem;
+  color: #ff9999;
+}
+@media only screen and (min-width: 23.4375rem) {
+  .form--introductory__invalid {
+    justify-self: start;
   }
 }
 .form--cta {
@@ -610,30 +631,49 @@ select {
 }
 @media only screen and (min-width: 48rem) {
   .form__input-field-introductory {
-    padding-inline: 0.5rem;
-    width: 60%;
+    padding-inline: 1.5rem;
   }
+}
+.form__input-field-introductory:invalid {
+  border: 1px solid #ff9999;
+}
+.form__input-field-introductory:invalid ~ .form--introductory__invalid {
+  display: block;
 }
 .form__input-field-cta {
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
   border: none;
-  padding-inline: 0.75rem;
-  padding-block: 0.5rem;
+  padding-inline: 1.5rem;
+  padding-block: 0.85rem;
+  margin-block-end: 0.5rem;
 }
 .form__input-field-cta::placeholder {
   color: hsl(0deg, 0%, 75%);
   font-family: "Raleway", sans-serif;
   font-size: 0.85rem;
 }
-.form__input-field-cta:valid {
-  border: none;
-}
 .form__input-field-cta:invalid {
-  border: 1px solid red;
+  border: 1px solid #ff0000;
+}
+.form__input-field-cta:invalid ~ .invalid {
+  display: block;
 }
 @media only screen and (min-width: 90rem) {
   .form__input-field-cta {
     width: 80%;
+  }
+}
+
+.invalid {
+  display: none;
+  margin-block-start: 0.2rem;
+  margin-block-end: 0.5rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.85rem;
+}
+@media only screen and (min-width: 23.4375rem) {
+  .invalid {
+    align-self: flex-start;
   }
 }
 
@@ -664,6 +704,11 @@ select {
 }
 .fylo__footer-logo {
   margin-block-end: 2rem;
+}
+@media only screen and (min-width: 37.5rem) {
+  .fylo__footer-logo {
+    width: 8rem;
+  }
 }
 @media only screen and (min-width: 64rem) {
   .fylo__footer-logo {

@@ -84,15 +84,20 @@
       height: 84px;
       top: -14%;
     }
+
     @media only screen and (min-width: 90rem) {
-      height: 84px;
       top: -12%;
+    }
+
+    @media only screen and (min-width: 119rem) {
+      height: 96px;
+      top: -13%;
     }
   }
 
   &--illustration {
     @media only screen and (min-width: 48rem) {
-      max-width: 50%;
+      max-width: 45%;
       flex: 1;
     }
   }
