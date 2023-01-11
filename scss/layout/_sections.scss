@@ -6,7 +6,7 @@
   gap: 2rem;
   padding-inline: 1.5rem;
   text-align: center;
-  margin-bottom: 5rem;
+  margin-block-end: 5rem;
 
   @media only screen and (min-width: 48rem) {
     flex-direction: row-reverse;
@@ -17,10 +17,15 @@
 
   @media only screen and (min-width: 64rem) {
     padding-inline: 4rem;
+    margin-block-end: 15rem;
+  }
+
+  @media only screen and (min-width: 90rem) {
+    margin-block-end: 15rem;
   }
 
   &__illustration {
-    margin-bottom: 1rem;
+    margin-block-end: 1rem;
 
     @media only screen and (min-width: 48rem) {
       flex: 1;
@@ -76,7 +81,11 @@
     }
 
     @media only screen and (min-width: 64rem) {
-      height: 75px;
+      height: 84px;
+      top: -14%;
+    }
+    @media only screen and (min-width: 90rem) {
+      height: 84px;
       top: -12%;
     }
   }

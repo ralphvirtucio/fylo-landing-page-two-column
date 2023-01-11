@@ -398,7 +398,7 @@ select {
   gap: 2rem;
   padding-inline: 1.5rem;
   text-align: center;
-  margin-bottom: 5rem;
+  margin-block-end: 5rem;
 }
 @media only screen and (min-width: 48rem) {
   .introductory {
@@ -411,10 +411,16 @@ select {
 @media only screen and (min-width: 64rem) {
   .introductory {
     padding-inline: 4rem;
+    margin-block-end: 15rem;
+  }
+}
+@media only screen and (min-width: 90rem) {
+  .introductory {
+    margin-block-end: 15rem;
   }
 }
 .introductory__illustration {
-  margin-bottom: 1rem;
+  margin-block-end: 1rem;
 }
 @media only screen and (min-width: 48rem) {
   .introductory__illustration {
@@ -474,7 +480,13 @@ select {
 }
 @media only screen and (min-width: 64rem) {
   .fylo__hero::before {
-    height: 75px;
+    height: 84px;
+    top: -14%;
+  }
+}
+@media only screen and (min-width: 90rem) {
+  .fylo__hero::before {
+    height: 84px;
     top: -12%;
   }
 }
