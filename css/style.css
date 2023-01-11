@@ -285,12 +285,17 @@ select {
     column-gap: 5rem;
   }
 }
+@media only screen and (min-width: 90rem) {
+  .site-map {
+    column-gap: 15rem;
+  }
+}
 .site-map__list-item:nth-child(4) {
-  margin-bottom: 2rem;
+  margin-block-end: 2rem;
 }
 @media only screen and (min-width: 48rem) {
   .site-map__list-item:nth-child(4) {
-    margin-bottom: 0;
+    margin-block-end: 0;
   }
 }
 .site-map__link {
@@ -322,6 +327,11 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (min-width: 90rem) {
+  .social-media {
+    margin-inline-end: 10rem;
+  }
 }
 .social-media__link {
   display: flex;
@@ -599,8 +609,19 @@ select {
     padding-inline: 4rem;
   }
 }
+@media only screen and (min-width: 90rem) {
+  .fylo__footer {
+    padding-block: 5rem;
+  }
+}
 .fylo__footer-logo {
   margin-block-end: 2rem;
+}
+@media only screen and (min-width: 64rem) {
+  .fylo__footer-logo {
+    width: 8rem;
+    margin-block-end: 0.5rem;
+  }
 }
 .fylo__footer-logo path {
   fill: #fff;
@@ -619,6 +640,16 @@ select {
 @media only screen and (min-width: 48rem) {
   .fylo__footer--col-2 {
     margin-block-end: 0rem;
+  }
+}
+@media only screen and (min-width: 90rem) {
+  .fylo__footer--col-2 {
+    margin-block-start: 2rem;
+  }
+}
+@media only screen and (min-width: 90rem) {
+  .fylo__footer--col-3 {
+    margin-block-end: 4.5rem;
   }
 }
 
