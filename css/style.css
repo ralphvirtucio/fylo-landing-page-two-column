@@ -171,6 +171,10 @@ select {
   font-size: 0.85rem;
   font-weight: 400;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.btn--get-started:hover {
+  background-color: #628af9;
 }
 @media only screen and (min-width: 48rem) {
   .btn--get-started-intro {
@@ -186,6 +190,13 @@ select {
 @media only screen and (min-width: 64rem) {
   .btn--get-started-cta {
     width: 45%;
+    padding-block: 1rem;
+  }
+}
+@media only screen and (min-width: 90rem) {
+  .btn--get-started-cta {
+    width: 35%;
+    padding-block: 1rem;
   }
 }
 .btn--see-fylo-works:link, .btn--see-fylo-works:visited {
@@ -205,6 +216,12 @@ select {
     margin-block: 1rem;
     align-self: start;
   }
+}
+.btn--see-fylo-works:hover {
+  color: #89d2c6;
+}
+.btn--see-fylo-works:hover g use {
+  fill: #89d2c6;
 }
 
 .profile {
@@ -302,6 +319,9 @@ select {
 .site-map__link {
   color: #fff;
 }
+.site-map__link:hover {
+  color: hsl(224deg, 93%, 58%);
+}
 
 @media only screen and (min-width: 48rem) {
   #jobs {
@@ -346,6 +366,13 @@ select {
 }
 .social-media__link:not(:last-child) {
   margin-inline-end: 1rem;
+}
+.social-media__link:hover {
+  color: hsl(224deg, 93%, 58%);
+  border-color: hsl(224deg, 93%, 58%);
+}
+.social-media__link:hover svg {
+  fill: hsl(224deg, 93%, 58%);
 }
 .social-media__link svg {
   fill: #fff;

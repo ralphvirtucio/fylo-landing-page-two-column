@@ -15,6 +15,10 @@
     font-size: 0.85rem;
     font-weight: 400;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    &:hover {
+      background-color: lighten($accent-color-1, $amount: 10%);
+    }
 
     &-intro {
       @media only screen and (min-width: 48rem) {
@@ -30,6 +34,11 @@
 
       @media only screen and (min-width: 64rem) {
         width: 45%;
+        padding-block: 1rem;
+      }
+      @media only screen and (min-width: 90rem) {
+        width: 35%;
+        padding-block: 1rem;
       }
     }
   }
@@ -54,12 +63,12 @@
       }
     }
 
-    // &:hover {
-    //   color: red;
-    // }
+    &:hover {
+      color: lighten($accent-color-2, $amount: 25%);
+    }
 
-    // &:hover g use {
-    //   fill: red;
-    // }
+    &:hover g use {
+      fill: lighten($accent-color-2, $amount: 25%);
+    }
   }
 }
