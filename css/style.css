@@ -418,7 +418,10 @@ select {
   font-family: "Raleway", sans-serif;
 }
 .nav__list-item:not(:last-child) {
-  margin-inline-end: 1rem;
+  margin-inline-end: 3rem;
+}
+.nav__list-item--link {
+  color: hsl(243deg, 87%, 12%);
 }
 
 .introductory {

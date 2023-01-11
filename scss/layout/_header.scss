@@ -36,7 +36,11 @@
       font-family: $ff-headings-cta-headnav;
 
       &:not(:last-child) {
-        margin-inline-end: 1rem;
+        margin-inline-end: 3rem;
+      }
+
+      &--link {
+        color: $primary-color-1;
       }
     }
   }
