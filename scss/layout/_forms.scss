@@ -53,6 +53,8 @@
   }
 
   &-cta {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    border: none;
     &::placeholder {
       color: $neutral-color-2;
       font-family: $ff-headings-cta-headnav;
